@@ -1,0 +1,188 @@
+body {
+	margin: 10px;
+	padding: 0 10 10 20;
+	font-family: Arial, sans-serif;
+    background-color: lightblue;
+    
+}
+#header {
+    background: linear-gradient(to right, #215884, rgb(19, 155, 173));
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px 15px 20px;
+    
+    
+    
+}
+
+#main-content{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 1px 15px 10px 15px;
+    margin-top: 15px;
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Times New Roman', Times, serif;
+        color: #2d87b4;
+        margin-bottom: 5px;
+        
+        
+    }
+    a{
+        color:rgb(22, 115, 128);
+        text-decoration: none;
+    }
+    p, li{
+        font-size: 12px;
+        color: darkblue;
+        font-weight: 550;
+        
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
+
+    ol, ul{
+        padding: 0px 15px 0px 17px;
+    }
+
+    .important{
+        background-color: rgb(122, 218, 238);
+        padding: 1px 2px;
+        border-radius: 2px;
+        color:rgb(29, 102, 133)
+    }
+}
+
+ul li::marker{
+    color:rgb(46, 196, 215);
+}
+
+#quiz-section{
+    background-color: rgb(127, 215, 235);
+    border-radius: 5px;
+    padding: 10px 10px 20px 20px;
+    
+    
+}
+
+#quiz-section {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Ensures space between the two sections */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 20px; /* Adds space between the columns */
+    padding: 10px;
+  }
+
+  .quiz {
+    display: flex; /* Flexbox for header and image */
+    flex-direction: column; /* Stacks header above image */
+    align-items: center; /* Center-aligns items */
+    font-size: 12px;
+  }
+
+  .quiz img {
+    border: 3px solid blueviolet; /* Adds border to the image */
+    margin-top: 10px; /* Space between the header and image */
+    width: 75px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .actual-quiz {
+    
+    flex-shrink: 0;
+  }
+
+  .actual-quiz form {
+    display: block; /* Ensures form elements are stacked */
+    text-align: left; /* Aligns form elements to the left */
+    margin-top: 2px;
+  }
+
+  .actual-quiz label {
+    display: block; /* Places labels on their own lines */
+    margin-bottom: 5px; /* Adds space below labels */
+    color: darkblue;
+    font-weight: 600;
+  }
+
+  .actual-quiz input[type="text"] {
+    width: 100%; /* Full width for text inputs */
+    margin-bottom: 10px; /* Space between text boxes */
+    border-radius: 4px;
+    height: 22px;
+    
+  }
+
+  .actual-quiz input[type="submit"] {
+    margin-top: 10px; /* Space above the submit button */
+    background-color: #1e688e;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+  }
+
+
+#species-table{
+    h2{
+        color:rgb(22, 115, 128); 
+        
+        
+    }
+    h2::after {
+        
+        content: ''; /* Adds the line */
+        display: block;
+        width: 8%; /* Adjust this to make the line shorter than the text */
+        height: 2px; /* Thickness of the line */
+        background-color: rgb(82, 212, 230); /* Color of the line */
+        margin-top: 5px;
+        
+    }
+
+    th{
+        background-color: grey;
+        color: whitesmoke;
+        text-align: left;
+    }
+
+    table{
+        border-collapse: collapse;
+        border-color: black;
+        width: 100%;
+        font-weight: 350;
+        
+    }
+
+    th, td{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    td {
+        color: darkblue;
+        
+    }
+
+    
+
+    /* Alternating row colors */
+    tr:nth-child(odd) {
+    background-color: whitesmoke; /* off white for odd rows */
+    }
+
+    tr:nth-child(even) {
+    background-color: lightblue; /* blue for even rows */
+    }
+}
+
+#footer{
+    background-color:#1e688e;
+    color: whitesmoke;
+    font-size: 10px;
+    padding: 2px 5px 10px 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+}

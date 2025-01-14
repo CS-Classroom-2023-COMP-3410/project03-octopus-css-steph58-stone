@@ -1,0 +1,4 @@
+MY REFLECTION
+
+When attempting this assignment I did a majority of the code on my own, and asked chatgpt to help me through the styling syntax. The most difficult part was the quiz section of the website. I made the desicion to use flexbox to keep the the header and image on one side, and the form on the other. I used chatgpt to help walk me through how to use flexbox the way I want. Originally I thought that the header was not included in the box, but I realized after looking at alignment it had to be.
+The overall padding and margins throughout the web page was also a struggle. It took a lot of trial and error to figure out how to get the spacing right. I found it difficult to determine if padding was needed or margin was needed in a specific case. After completing this assignment I find it easier to figure out what to change, but I could still use some practice.

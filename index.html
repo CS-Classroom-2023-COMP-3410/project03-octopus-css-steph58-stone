@@ -4,33 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <title>The Fascinating World of Octopuses</title>
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+    <style>
+        h1, h2, h3, h4, h5, h6{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Header Section -->
     <div id="header">
-        <h1>The Fascinating World of Octopuses</h1>
-        <p>Welcome to this intriguing corner of the internet!</p>
+        <h1 style = "font-size: 22px; text-align: center; font-family: 'Times New Roman', Times, serif; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">The Fascinating World of Octopuses</h1>
+        <p style = "font-style: italic; font-size: 12px;">Welcome to this intriguing corner of the internet!</p>
     </div>
 
     <!-- Main Content -->
     <div id="main-content">
 
         <!-- Introduction -->
-        <h2>Introduction</h2>
+        <h2 style = "display: inline-block; border-bottom: 2px solid rgb(82, 212, 230); width: 8%; padding-bottom: 5px; ">INTRODUCTION</h2>
         <p>
             Octopuses are among the most fascinating creatures in the ocean.
             They are known for their intelligence and remarkable adaptability.
         </p>
 
         <!-- Amazing Facts -->
-        <h3>Amazing Facts</h3>
+        <h3>AMAZING FACTS</h3>
         <!-- Unordered list -->
-        <ul>
-            <li>They have three hearts.</li>
-            <li>They can change color.</li>
-            <li>They are masters of camouflage.</li>
-        </ul>
+        <div id="facts">
+            <ul>
+                <li>They have three hearts.</li>
+                <li>They can change color.</li>
+                <li>They are masters of camouflage.</li>
+            </ul>
+        </div>
+        
 
         <!-- Anatomy -->
         <h4>Anatomy</h4>
@@ -58,12 +67,15 @@
 
         <!-- Fun Experiment: Octopus Quiz -->
         <div id="quiz-section">
-
+            <div class="quiz">
+            <h2>OCTOPUS QUIZ</h2>
             <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100">
+            
+                <img src="octopus-image.png" alt="Image of an octopus" width="100" style = " border: 3px solid blueviolet;">
 
-            <h2>Octopus Quiz</h2>
-            <form action="/submit-quiz" method="POST">
+            </div>
+            <div class = "actual-quiz">
+                <form action="/submit-quiz" method="POST">
                 <!-- Question 1 -->
                 <label for="question1">How many hearts does an octopus have?</label>
                 <input type="text" id="question1" name="question1"><br>
@@ -73,7 +85,9 @@
                 <input type="text" id="question2" name="question2"><br>
 
                 <input type="submit" value="Submit Quiz">
-            </form>
+                </form>
+            </div>
+            
         </div>
 
     </div> <!-- End of main-content -->
